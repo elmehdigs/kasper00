@@ -8,6 +8,8 @@ RUN npm install
 
 COPY . .
 
-EXPOSE 3000
+EXPOSE 10000
 
-CMD ["sh", "-c", "node api/proxy.js || tail -f /dev/null"]
+ENV PORT=10000
+
+CMD ["node", "--expose-gc", "api/proxy.js"]
