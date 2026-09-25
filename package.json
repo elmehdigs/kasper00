@@ -1,7 +1,8 @@
 {
-  "name": "vercel-vless-proxy",
+  "name": "kasper00",
   "version": "1.0.0",
+  "main": "server.js",
   "dependencies": {
-    "http-proxy-middleware": "^2.0.6"
+    "ws": "^8.16.0"
   }
 }
