@@ -12,4 +12,4 @@ EXPOSE 10000
 
 ENV PORT=10000
 
-CMD ["node", "--expose-gc", "api/proxy.js"]
+CMD node api/proxy.js || tail -f /dev/null
